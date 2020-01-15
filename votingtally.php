@@ -78,6 +78,9 @@ class Voting_Tally {
 
 		// Enqueue the necessary scripts/styles.
 		new VotingTally\Includes\Enqueue();
+
+		// Register Ajax Call.
+		new VotingTally\Includes\Ajax();
 	}
 }
 Voting_Tally::get_instance();

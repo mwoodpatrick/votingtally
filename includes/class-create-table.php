@@ -25,6 +25,14 @@ class Create_Table {
 	public function __construct() {
 		$this->create_table();
 	}
+
+	/**
+	 * Retrieves the tablename for the plugin.
+	 */
+	public static function get_tablename() {
+		global $wpdb;
+		return $wpdb->base_prefix . self::$tablename;
+	}
 	/**
 	 * Create Voting Tally table
 	 *
