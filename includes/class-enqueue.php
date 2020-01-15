@@ -36,7 +36,9 @@ class Enqueue {
 			'votingtally',
 			'votingtally',
 			array(
-				'ajaxurl' => admin_url( 'admin-ajax.php' ),
+				'ajaxurl'       => admin_url( 'admin-ajax.php' ),
+				'loading'       => VOTINGTALLY_URL . 'images/loading.svg',
+				'vote_recorded' => __( 'Thanks! Your vote has been recorded.', 'votingtally' ),
 			)
 		);
 		wp_enqueue_style(
