@@ -57,7 +57,6 @@ class Create_Table {
 				id INT(20) NOT NULL AUTO_INCREMENT,
 				site_id INT (20) NOT NULL,
 				blog_id INT (20) NOT NULL,
-				author_id INT (20) NOT NULL,
 				content_id INT(20) NOT NULL,
 				post_type VARCHAR(20) NOT NULL,
 				up_votes INT (20) NOT NULL,

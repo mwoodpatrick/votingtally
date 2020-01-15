@@ -59,9 +59,8 @@ class Ajax {
 					'blog_id'    => absint( $blog_id ),
 					'content_id' => absint( $post_id ),
 					'post_type'  => sanitize_text_field( $post_type ),
-					'author_id'  => absint( $current_user->ID ),
 				),
-				array( '%d', '%d', '%d', '%s', '%d' )
+				array( '%d', '%d', '%d', '%s' )
 			);
 			$post_rating              = new \stdClass();
 			$post_rating->up_votes    = 0;
