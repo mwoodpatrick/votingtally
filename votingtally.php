@@ -1,4 +1,4 @@
-<?php
+<?php // phpcs:ignore
 /**
  * Voting Tally Plugin
  *
@@ -72,6 +72,12 @@ class Voting_Tally {
 	public function plugins_loaded() {
 		// Create the table.
 		new VotingTally\Includes\Create_Table();
+
+		// Output the Voting Talley interface.
+		new VotingTally\Includes\Output();
+
+		// Enqueue the necessary scripts/styles.
+		new VotingTally\Includes\Enqueue();
 	}
 }
 Voting_Tally::get_instance();
