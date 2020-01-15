@@ -15,13 +15,13 @@ jQuery(function($) {
 
 			} )
 			.done(function() {
-				alert( "second success" );
+				$( '.voting-tally' ).html( '<h5>' + votingtally.vote_recorded + '</h5>' );
 			})
 			.fail(function() {
-				alert( "error" );
+				$( '.voting-tally' ).html( '<h5>' + votingtally.vote_error + '</h5>' );
 			})
 			.always(function() {
-				alert( "finished" );
+				
 			})
 	} );
 });
